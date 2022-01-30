@@ -2,8 +2,8 @@
   <div class="my-2">
       <div v-for="(form,i) in target[prop]" :key="i" class="row mb-3">
           <div class="col-sm">
-              <div class="card">
-                  <div class="card-header d-sm-flex justify-content-sm-between">
+              <div class="card bg-dark">
+                  <div class="card-header bg-dark-gray d-sm-flex justify-content-sm-between">
                       <div>
                           <h3>{{ title }}# {{ i }}</h3>
                       </div>
@@ -23,7 +23,7 @@
                             validateAfterChanged: true,
                             validateAsync: true,
                           }"
-                        />  
+                        />
                   </div>
 
                   <div v-for="(subform, j) in subforms" :key="j">
@@ -55,7 +55,7 @@ export default {
     },
 
     props: {
-       
+
         schema:{
             type: Object,
             required: true,
@@ -67,9 +67,6 @@ export default {
         }
     },
 
-    
-
-   
 };
 </script>
 

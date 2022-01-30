@@ -1,5 +1,5 @@
 <template>
-  <div class="card my-2">
+  <div class="card bg-dark my-2">
     <div class="card-header">
       <h3>{{ title }}</h3>
     </div>
@@ -12,7 +12,7 @@
               type="text"
               required
               autofocus
-              class="form-control"
+              class="form-control bg-dark text-light"
               :placeholder="placeholder"
               v-model="model[self][index]"
             />

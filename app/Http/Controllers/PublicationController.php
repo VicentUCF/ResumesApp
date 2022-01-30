@@ -21,7 +21,7 @@ class PublicationController extends Controller
     public function __construct()
     {
         $this->middleware('auth', ['except' => 'show']);
-        $this->jsonResumeAPi = config('services.jsonresume.api');
+        $this->jsonResumeAPi = "registry.jsonresume.org";
     }
 
     public function show(Publication $publication)
@@ -35,7 +35,9 @@ class PublicationController extends Controller
             }
         }
 
-        return $this->render($publication->resume, $publication->theme);
+        $resume = $this->render($publication->resume, $publication->theme)->getContent();
+        return view('publications.show', compact('resume'));
+
     }
 
     public function index()
@@ -55,12 +57,16 @@ class PublicationController extends Controller
             abort(Response::HTTP_FORBIDDEN);
         }
 
+
+
         return $this->render($resume, $theme);
     }
 
     private function render(Resume $resume, Theme $theme)
     {
-        $response = Http::post("{$this->jsonResumeAPi}/theme/{$theme->theme}", [
+        $theme = str_replace("jsonresume-theme-", "",$theme->theme);
+
+        $response = Http::post("{$this->jsonResumeAPi}/theme/{$theme}", [
             'resume' => $resume->content,
         ]);
 
@@ -79,7 +85,14 @@ class PublicationController extends Controller
         if (count($resumes)<1){
             return redirect()->route('resumes.create');
         }
-        $themes = Theme::all();
+        $themes = [];
+
+
+        foreach (Theme::all() as $theme) {
+            $theme->theme = str_replace("jsonresume-theme-", "", $theme->theme);
+            array_push($themes, $theme);
+        }
+
         return view('publications.edit', compact('resumes','themes'));
     }
 
@@ -96,7 +109,7 @@ class PublicationController extends Controller
             $data,
             ['url' => 'tmp'],
         ));
-        
+
         $url = route('publications.show', $publication->id);
         $publication->update(compact('url'));
 
@@ -107,11 +120,11 @@ class PublicationController extends Controller
             'type' => 'success',
             'messages' => ["Resume $resume->title published with theme $theme->theme at <a href='$url'>$url</a>"],
         ]);
-        
+
         //"Resume $resume->title published with theme $theme->theme at <a href='$url'>$url</a>
     }
 
-    
+
     /**
      * Show the form for editing the specified resource.
      *
@@ -122,14 +135,19 @@ class PublicationController extends Controller
     {
         $this->authorize('update',  $publication);
         $resumes = auth()->user()->resumes;
-        $themes = Theme::all();
-   
+        $themes = [];
+
+        foreach (Theme::all() as $theme){
+           $theme->theme = str_replace("jsonresume-theme-", "", $theme->theme);
+           array_push($themes, $theme);
+        }
+
 
         return view('publications.edit',compact(
             'publication',
             'resumes',
             'themes',
- 
+
         ));
     }
 

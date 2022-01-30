@@ -2,10 +2,10 @@
   <BTab title-link-class="p-2">
       <template #title>
           <div class="d-flex justify-content-center">
-              <div>
+              <div class="c-1">
                   <i style="font-size:20px;" :class="icon"></i>
               </div>
-              <div class="ml-2 font-weight-bold d-none d-md-block">
+              <div class="ml-2 font-weight-bold d-none d-md-block c-2">
                   {{ title }}
               </div>
           </div>
@@ -28,10 +28,10 @@ export default {
       icon: {
           type: String,
           required: true,
-      }  
+      }
     },
-    
-    
+
+
 
     components: {
         BTab,

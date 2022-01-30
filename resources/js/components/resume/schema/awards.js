@@ -1,3 +1,5 @@
+const attributes = { input: { class: 'form-control bg-dark text-light' } };
+
 export default {
   fields: [
     // Title
@@ -8,6 +10,7 @@ export default {
       placeholder: 'Award Title',
       model: 'title',
       styleClasses: ['col-md-4', 'p-0', 'pr-md-1'],
+      attributes: attributes,
     },
     // Date
     {
@@ -16,6 +19,7 @@ export default {
       label: 'Date',
       model: 'date',
       styleClasses: ['col-md-4', 'p-0', 'pr-md-1'],
+      attributes: attributes,
     },
     // Awarder
     {
@@ -25,6 +29,7 @@ export default {
       placeholder: 'Company',
       model: 'awarder',
       styleClasses: ['col-md-4', 'p-0'],
+      attributes: attributes,
     },
     // Summary
     {
@@ -33,6 +38,7 @@ export default {
       label: 'Summary',
       placeholder: 'There is no spoon.',
       model: 'summary',
+      attributes: attributes,
     },
   ],
 };

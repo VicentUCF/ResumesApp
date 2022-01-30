@@ -1,3 +1,5 @@
+const attributes = { input: { class: 'form-control bg-dark text-light' } };
+
 export default {
   fields: [
     // Institution
@@ -8,6 +10,7 @@ export default {
       placeholder: 'University or Institution name',
       model: 'institution',
       styleClasses: ['col-md-4', 'p-0', 'pr-md-1'],
+      attributes: attributes,
     },
     // Area
     {
@@ -17,6 +20,7 @@ export default {
       placeholder: 'Computer Science',
       model: 'area',
       styleClasses: ['col-md-4', 'p-0', 'pr-md-1'],
+      attributes: attributes,
     },
     // Study Type
     {
@@ -26,6 +30,7 @@ export default {
       placeholder: 'Bachelor of Science',
       model: 'studyType',
       styleClasses: ['col-md-4', 'p-0'],
+      attributes: attributes,
     },
     // Start Date
     {
@@ -35,6 +40,7 @@ export default {
       label: 'Start Date',
       model: 'startDate',
       styleClasses: ['col-md-4', 'p-0', 'pr-md-1'],
+      attributes: attributes,
     },
     // End Date
     {
@@ -44,6 +50,7 @@ export default {
       label: 'End Date',
       model: 'endDate',
       styleClasses: ['col-md-4', 'p-0', 'pr-md-1'],
+      attributes: attributes,
     },
     // GPA
     {
@@ -53,6 +60,7 @@ export default {
       model: 'gpa',
       validor: 'number',
       styleClasses: ['col-md-4', 'p-0'],
+      attributes: attributes,
     },
   ],
 };
