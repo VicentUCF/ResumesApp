@@ -1,7 +1,7 @@
 const padding = ['p-0', 'pr-md-1'];
 const colMd4 = ['col-md-4', ...padding];
 const colMd6 = ['col-md-6', ...padding];
-
+const attributes = { input: { class: 'form-control bg-dark text-light' } };
 
 export default {
   fields: [
@@ -13,6 +13,7 @@ export default {
       label: 'Company',
       model: 'company',
       styleClasses: colMd4,
+      attributes: attributes,
     },
 
     //Position
@@ -23,6 +24,7 @@ export default {
       label: 'Position',
       model: 'position',
       styleClasses: colMd4,
+      attributes: attributes,
     },
 
     //Webstite
@@ -34,6 +36,7 @@ export default {
       model: 'website',
       validator: 'url',
       styleClasses: colMd4,
+      attributes: attributes,
     },
 
     // Start Date
@@ -44,6 +47,7 @@ export default {
       label: 'Start Date',
       model: 'startDate',
       styleClasses: colMd6,
+      attributes: attributes,
     },
     // End Date
     {
@@ -53,6 +57,7 @@ export default {
       label: 'End Date',
       model: 'endDate',
       styleClasses: colMd6,
+      attributes: attributes,
     },
     // Summary
     {
@@ -61,6 +66,7 @@ export default {
       label: 'Summary',
       placeholder: 'What was this job about?',
       model: 'summary',
+      attributes: attributes,
     },
   ],
 };

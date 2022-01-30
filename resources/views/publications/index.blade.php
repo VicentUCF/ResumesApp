@@ -4,7 +4,7 @@
        <div class="row">
         @foreach ($publications as $publication)
             <div class='col-md-4 mb-3'>
-                <div class='card text-center'>
+                <div class='card border-white p-3  bg-dark text-light text-center'>
                     <div class='card-body'>
                         <h3 class="card-title text-capitalize" style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
                             {{ $publication->resume->title }}

@@ -1,6 +1,7 @@
 const padding = ['p-0', 'pr-md-1'];
-const colMd4 = ['col-md-4', ...padding];
+const colMd4 = ['col-md-4', 'bg-dark', 'text-light', ...padding];
 const colMd6 = ['col-md-6', ...padding];
+const attributes = { input: { class: 'form-control bg-dark text-light' } };
 
 export default {
   fields: [
@@ -9,7 +10,6 @@ export default {
       type: 'resume-image',
       label: 'Resume Profile Image',
       model: 'picture',
-
     },
 
     //Name
@@ -20,6 +20,7 @@ export default {
       label: 'Name',
       model: 'name',
       styleClasses: colMd4,
+      attributes: attributes,
     },
 
     //Label
@@ -30,6 +31,7 @@ export default {
       label: 'Label',
       model: 'label',
       styleClasses: colMd4,
+      attributes: attributes,
     },
 
     //E-Mail
@@ -41,6 +43,7 @@ export default {
       model: 'email',
       validator: 'email',
       styleClasses: colMd4,
+      attributes: attributes,
     },
 
     //Phone
@@ -51,6 +54,7 @@ export default {
       label: 'Phone',
       model: 'phone',
       styleClasses: colMd6,
+      attributes: attributes,
     },
 
     //Website
@@ -62,6 +66,7 @@ export default {
       model: 'website',
       validator: 'url',
       styleClasses: colMd6,
+      attributes: attributes,
     },
 
     //Summary
@@ -71,6 +76,7 @@ export default {
       placeholder: 'A little bit about yourself',
       label: 'Summary',
       model: 'summary',
+      attributes: attributes,
     },
   ],
 };

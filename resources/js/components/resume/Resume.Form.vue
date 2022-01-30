@@ -176,7 +176,7 @@ export default {
       ],
     },
   }),
- 
+
   methods: {
     validate(target, parent = 'resume') {
       let errors = [];

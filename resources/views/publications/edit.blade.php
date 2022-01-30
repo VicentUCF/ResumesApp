@@ -2,7 +2,7 @@
 
 @section('content')
     <div class='container'>
-        <div class="border rounded">
+        <div class="text-light">
             <div class="cotainer my-3">
                 @if(isset($publication))
                     <form method="POST" action="{{ route('publications.update', $publication->id ) }}">
@@ -12,9 +12,9 @@
                 @endif
                     @csrf
                     <div class="row">
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-md-3">
                             <label>Resume</label>
-                            <select id="resume" name="resume_id" class="form-control">
+                            <select id="resume" name="resume_id" class="form-control bg-dark text-light">
                                @foreach ($resumes as $resume)
                                    @if (isset($publication) && $publication->resume->id === $resume->id)
                                      <option selected value="{{ $resume->id }}">{{ $resume->title }}</option>
@@ -25,9 +25,9 @@
                             </select>
                         </div>
 
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-md-3">
                             <label>Theme</label>
-                             <select id="theme" name="theme_id" class="form-control">
+                             <select id="theme" name="theme_id" class="form-control bg-dark text-light">
                                 @foreach ($themes as $theme)
                                    @if (isset($publication) && $publication->theme->id === $theme->id)
                                      <option selected value="{{ $theme->id }}">{{ $theme->theme }}</option>
@@ -38,9 +38,9 @@
                             </select>
                         </div>
 
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-md-3">
                             <label>Visibility</label>
-                            <select name="visibility" class="form-control">
+                            <select name="visibility" class="form-control bg-dark text-light">
                                  @foreach (['public', 'private', 'hide'] as $visibility )
                                    @if (isset($publication) && $publication->visibility === $visibility)
                                     <option selected value="{{ $visibility }}">{{ $visibility }}</option>
@@ -49,20 +49,24 @@
                                    @endif
                                 @endforeach
                             </select>
-                                
-                            
+
+
                         </div>
+                        <div class="col-md-3 mt-3">
+                            <button class="mt-3 btn btn-primary w-100" type="submit">
+                                Save
+                            </button>
+                        </div>
+
                     </div>
-                    <div class="mx-auto" style="width:80px">
-                        <button class="btn btn-primary" style="width:80px" type="submit">
-                            Save
-                        </button>
-                    </div>
+
+
+
                 </form>
             </div>
         </div>
 
-        <div class="mt-2">
+        <div class="mt-2 bg-light rounded">
             <iframe id="iframe" class="border rounded w-100" style="height: 640px;"></iframe>
         </div>
     </div>
@@ -83,7 +87,7 @@
                 });
 
                 iframe.srcdoc = res.data;
-                
+
             } catch (e) {
                 console.log(e);
             }
@@ -96,6 +100,6 @@
 
         resume.onchange = async (e) => await loadPreview(e.target.value, theme.value);
         theme.onchange = async (e) => await loadPreview(resume.value, e.target.value);
-        
+
     });
 </script>

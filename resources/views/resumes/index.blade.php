@@ -4,7 +4,7 @@
        <div class="row">
         @foreach ($resumes as $resume)
             <div class='col-md-4 mb-3'>
-                <div class='card text-center'>
+                <div class='card bg-dark border-white p-3 text-light text-center'>
                     <div class='card-body'>
                         <h3 class="card-title text-capitalize" style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
                             {{ $resume->title }}

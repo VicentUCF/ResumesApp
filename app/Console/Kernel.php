@@ -26,8 +26,9 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule) {
         $schedule->call(function () {
-            $jsonResumeApi = config('services.jsonresume.api');
-            $response = Http::get("{$jsonResumeApi}/themes");
+            //$jsonResumeApi = config('services.jsonresume.api');
+            $resumeApi = "registry.jsonresume.org";
+            $response = Http::get("{$resumeApi}/themes");
             foreach ($response->json() as $theme) {
                 Theme::firstOrCreate(compact('theme'));
             }

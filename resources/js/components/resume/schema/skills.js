@@ -1,3 +1,5 @@
+const attributes = { input: { class: 'form-control bg-dark text-light' } };
+
 export default {
   fields: [
     // Name
@@ -8,6 +10,7 @@ export default {
       placeholder: 'Web Development',
       model: 'name',
       styleClasses: ['col-md-6', 'p-0', 'pr-md-1'],
+      attributes: attributes,
     },
     // Level
     {
@@ -17,6 +20,7 @@ export default {
       placeholder: 'Master',
       model: 'level',
       styleClasses: ['col-md-6', 'p-0'],
+      attributes: attributes,
     },
   ],
 };

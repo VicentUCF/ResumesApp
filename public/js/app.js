@@ -3013,6 +3013,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+var attributes = {
+  input: {
+    "class": 'form-control bg-dark text-light'
+  }
+};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   fields: [// Title
   {
@@ -3021,14 +3026,16 @@ __webpack_require__.r(__webpack_exports__);
     label: 'Title',
     placeholder: 'Award Title',
     model: 'title',
-    styleClasses: ['col-md-4', 'p-0', 'pr-md-1']
+    styleClasses: ['col-md-4', 'p-0', 'pr-md-1'],
+    attributes: attributes
   }, // Date
   {
     type: 'input',
     inputType: 'date',
     label: 'Date',
     model: 'date',
-    styleClasses: ['col-md-4', 'p-0', 'pr-md-1']
+    styleClasses: ['col-md-4', 'p-0', 'pr-md-1'],
+    attributes: attributes
   }, // Awarder
   {
     type: 'input',
@@ -3036,14 +3043,16 @@ __webpack_require__.r(__webpack_exports__);
     label: 'Awarder',
     placeholder: 'Company',
     model: 'awarder',
-    styleClasses: ['col-md-4', 'p-0']
+    styleClasses: ['col-md-4', 'p-0'],
+    attributes: attributes
   }, // Summary
   {
     type: 'textArea',
     inputType: 'text',
     label: 'Summary',
     placeholder: 'There is no spoon.',
-    model: 'summary'
+    model: 'summary',
+    attributes: attributes
   }]
 });
 
@@ -3061,8 +3070,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 var padding = ['p-0', 'pr-md-1'];
-var colMd4 = ['col-md-4'].concat(padding);
+var colMd4 = ['col-md-4', 'bg-dark', 'text-light'].concat(padding);
 var colMd6 = ['col-md-6'].concat(padding);
+var attributes = {
+  input: {
+    "class": 'form-control bg-dark text-light'
+  }
+};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   fields: [//Picture
   {
@@ -3076,7 +3090,8 @@ var colMd6 = ['col-md-6'].concat(padding);
     placeholder: 'Your Name',
     label: 'Name',
     model: 'name',
-    styleClasses: colMd4
+    styleClasses: colMd4,
+    attributes: attributes
   }, //Label
   {
     type: 'input',
@@ -3084,7 +3099,8 @@ var colMd6 = ['col-md-6'].concat(padding);
     placeholder: 'Programmer',
     label: 'Label',
     model: 'label',
-    styleClasses: colMd4
+    styleClasses: colMd4,
+    attributes: attributes
   }, //E-Mail
   {
     type: 'input',
@@ -3093,7 +3109,8 @@ var colMd6 = ['col-md-6'].concat(padding);
     label: 'Email',
     model: 'email',
     validator: 'email',
-    styleClasses: colMd4
+    styleClasses: colMd4,
+    attributes: attributes
   }, //Phone
   {
     type: 'input',
@@ -3101,7 +3118,8 @@ var colMd6 = ['col-md-6'].concat(padding);
     placeholder: '987251672',
     label: 'Phone',
     model: 'phone',
-    styleClasses: colMd6
+    styleClasses: colMd6,
+    attributes: attributes
   }, //Website
   {
     type: 'input',
@@ -3110,14 +3128,16 @@ var colMd6 = ['col-md-6'].concat(padding);
     label: 'Website',
     model: 'website',
     validator: 'url',
-    styleClasses: colMd6
+    styleClasses: colMd6,
+    attributes: attributes
   }, //Summary
   {
     type: 'textArea',
     inputType: 'text',
     placeholder: 'A little bit about yourself',
     label: 'Summary',
-    model: 'summary'
+    model: 'summary',
+    attributes: attributes
   }]
 });
 
@@ -3137,6 +3157,11 @@ __webpack_require__.r(__webpack_exports__);
 var padding = ['p-0', 'pr-md-1'];
 var colMd4 = ['col-md-4'].concat(padding);
 var colMd6 = ['col-md-6'].concat(padding);
+var attributes = {
+  input: {
+    "class": 'form-control bg-dark text-light'
+  }
+};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   fields: [//Address
   {
@@ -3145,7 +3170,8 @@ var colMd6 = ['col-md-6'].concat(padding);
     placeholder: '2712 Brodway St',
     label: 'Adress',
     model: 'adress',
-    styleClasses: colMd4
+    styleClasses: colMd4,
+    attributes: attributes
   }, //Address
   {
     type: 'input',
@@ -3153,7 +3179,8 @@ var colMd6 = ['col-md-6'].concat(padding);
     placeholder: '46614',
     label: 'Postal Code',
     model: 'postalCode',
-    styleClasses: colMd4
+    styleClasses: colMd4,
+    attributes: attributes
   }, //City
   {
     type: 'input',
@@ -3161,7 +3188,8 @@ var colMd6 = ['col-md-6'].concat(padding);
     placeholder: 'Cullera',
     label: 'City',
     model: 'city',
-    styleClasses: colMd4
+    styleClasses: colMd4,
+    attributes: attributes
   }, //Country Code
   {
     type: 'input',
@@ -3169,7 +3197,8 @@ var colMd6 = ['col-md-6'].concat(padding);
     placeholder: 'ES',
     label: 'Country Code',
     model: 'countryCode',
-    styleClasses: colMd6
+    styleClasses: colMd6,
+    attributes: attributes
   }, //Region
   {
     type: 'input',
@@ -3177,7 +3206,8 @@ var colMd6 = ['col-md-6'].concat(padding);
     placeholder: 'Valenica',
     label: 'Region',
     model: 'region',
-    styleClasses: colMd6
+    styleClasses: colMd6,
+    attributes: attributes
   }]
 });
 
@@ -3196,6 +3226,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 var padding = ['p-0', 'pr-md-1'];
 var colMd4 = ['col-md-4'].concat(padding);
+var attributes = {
+  input: {
+    "class": 'form-control bg-dark text-light'
+  }
+};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   fields: [//Network
   {
@@ -3204,7 +3239,8 @@ var colMd4 = ['col-md-4'].concat(padding);
     placeholder: 'Twitter',
     label: 'Network',
     model: 'network',
-    styleClasses: colMd4
+    styleClasses: colMd4,
+    attributes: attributes
   }, //URL
   {
     type: 'input',
@@ -3213,7 +3249,8 @@ var colMd4 = ['col-md-4'].concat(padding);
     label: 'Url',
     model: 'url',
     validator: 'url',
-    styleClasses: colMd4
+    styleClasses: colMd4,
+    attributes: attributes
   }, //Username
   {
     type: 'input',
@@ -3221,7 +3258,8 @@ var colMd4 = ['col-md-4'].concat(padding);
     placeholder: 'yourname',
     label: 'Username',
     model: 'username',
-    styleClasses: colMd4
+    styleClasses: colMd4,
+    attributes: attributes
   }]
 });
 
@@ -3238,6 +3276,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+var attributes = {
+  input: {
+    "class": 'form-control bg-dark text-light'
+  }
+};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   fields: [// Institution
   {
@@ -3246,7 +3289,8 @@ __webpack_require__.r(__webpack_exports__);
     label: 'Institution',
     placeholder: 'University or Institution name',
     model: 'institution',
-    styleClasses: ['col-md-4', 'p-0', 'pr-md-1']
+    styleClasses: ['col-md-4', 'p-0', 'pr-md-1'],
+    attributes: attributes
   }, // Area
   {
     type: 'input',
@@ -3254,7 +3298,8 @@ __webpack_require__.r(__webpack_exports__);
     label: 'Area',
     placeholder: 'Computer Science',
     model: 'area',
-    styleClasses: ['col-md-4', 'p-0', 'pr-md-1']
+    styleClasses: ['col-md-4', 'p-0', 'pr-md-1'],
+    attributes: attributes
   }, // Study Type
   {
     type: 'input',
@@ -3262,7 +3307,8 @@ __webpack_require__.r(__webpack_exports__);
     label: 'Study Type',
     placeholder: 'Bachelor of Science',
     model: 'studyType',
-    styleClasses: ['col-md-4', 'p-0']
+    styleClasses: ['col-md-4', 'p-0'],
+    attributes: attributes
   }, // Start Date
   {
     type: 'input',
@@ -3270,7 +3316,8 @@ __webpack_require__.r(__webpack_exports__);
     format: 'YYYY-MM-DD HH:mm:ss',
     label: 'Start Date',
     model: 'startDate',
-    styleClasses: ['col-md-4', 'p-0', 'pr-md-1']
+    styleClasses: ['col-md-4', 'p-0', 'pr-md-1'],
+    attributes: attributes
   }, // End Date
   {
     type: 'input',
@@ -3278,7 +3325,8 @@ __webpack_require__.r(__webpack_exports__);
     format: 'YYYY-MM-DD HH:mm:ss',
     label: 'End Date',
     model: 'endDate',
-    styleClasses: ['col-md-4', 'p-0', 'pr-md-1']
+    styleClasses: ['col-md-4', 'p-0', 'pr-md-1'],
+    attributes: attributes
   }, // GPA
   {
     type: 'input',
@@ -3286,7 +3334,8 @@ __webpack_require__.r(__webpack_exports__);
     label: 'GPA',
     model: 'gpa',
     validor: 'number',
-    styleClasses: ['col-md-4', 'p-0']
+    styleClasses: ['col-md-4', 'p-0'],
+    attributes: attributes
   }]
 });
 
@@ -3303,6 +3352,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+var attributes = {
+  input: {
+    "class": 'form-control bg-dark text-light'
+  }
+};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   fields: [// Name
   {
@@ -3311,7 +3365,8 @@ __webpack_require__.r(__webpack_exports__);
     label: 'Name',
     placeholder: 'Web Development',
     model: 'name',
-    styleClasses: ['col-md-6', 'p-0', 'pr-md-1']
+    styleClasses: ['col-md-6', 'p-0', 'pr-md-1'],
+    attributes: attributes
   }, // Level
   {
     type: 'input',
@@ -3319,7 +3374,8 @@ __webpack_require__.r(__webpack_exports__);
     label: 'level',
     placeholder: 'Master',
     model: 'level',
-    styleClasses: ['col-md-6', 'p-0']
+    styleClasses: ['col-md-6', 'p-0'],
+    attributes: attributes
   }]
 });
 
@@ -3339,6 +3395,11 @@ __webpack_require__.r(__webpack_exports__);
 var padding = ['p-0', 'pr-md-1'];
 var colMd4 = ['col-md-4'].concat(padding);
 var colMd6 = ['col-md-6'].concat(padding);
+var attributes = {
+  input: {
+    "class": 'form-control bg-dark text-light'
+  }
+};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   fields: [//Copmany
   {
@@ -3347,7 +3408,8 @@ var colMd6 = ['col-md-6'].concat(padding);
     placeholder: 'Company Name',
     label: 'Company',
     model: 'company',
-    styleClasses: colMd4
+    styleClasses: colMd4,
+    attributes: attributes
   }, //Position
   {
     type: 'input',
@@ -3355,7 +3417,8 @@ var colMd6 = ['col-md-6'].concat(padding);
     placeholder: 'Job Title',
     label: 'Position',
     model: 'position',
-    styleClasses: colMd4
+    styleClasses: colMd4,
+    attributes: attributes
   }, //Webstite
   {
     type: 'input',
@@ -3364,7 +3427,8 @@ var colMd6 = ['col-md-6'].concat(padding);
     label: 'Website',
     model: 'website',
     validator: 'url',
-    styleClasses: colMd4
+    styleClasses: colMd4,
+    attributes: attributes
   }, // Start Date
   {
     type: 'input',
@@ -3372,7 +3436,8 @@ var colMd6 = ['col-md-6'].concat(padding);
     format: 'YYYY-MM-DD HH:mm:ss',
     label: 'Start Date',
     model: 'startDate',
-    styleClasses: colMd6
+    styleClasses: colMd6,
+    attributes: attributes
   }, // End Date
   {
     type: 'input',
@@ -3380,14 +3445,16 @@ var colMd6 = ['col-md-6'].concat(padding);
     format: 'YYYY-MM-DD HH:mm:ss',
     label: 'End Date',
     model: 'endDate',
-    styleClasses: colMd6
+    styleClasses: colMd6,
+    attributes: attributes
   }, // Summary
   {
     type: 'textArea',
     inputType: 'text',
     label: 'Summary',
     placeholder: 'What was this job about?',
-    model: 'summary'
+    model: 'summary',
+    attributes: attributes
   }]
 });
 
@@ -45599,13 +45666,13 @@ var render = function() {
           _c("div", { staticClass: "col-sm" }, [
             _c(
               "div",
-              { staticClass: "card" },
+              { staticClass: "card bg-dark" },
               [
                 _c(
                   "div",
                   {
                     staticClass:
-                      "card-header d-sm-flex justify-content-sm-between"
+                      "card-header bg-dark-gray d-sm-flex justify-content-sm-between"
                   },
                   [
                     _c("div", [
@@ -45720,7 +45787,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "card my-2" }, [
+  return _c("div", { staticClass: "card bg-dark my-2" }, [
     _c("div", { staticClass: "card-header" }, [
       _c("h3", [_vm._v(_vm._s(_vm.title))])
     ]),
@@ -45742,7 +45809,7 @@ var render = function() {
                       expression: "model[self][index]"
                     }
                   ],
-                  staticClass: "form-control",
+                  staticClass: "form-control bg-dark text-light",
                   attrs: {
                     type: "text",
                     required: "",
@@ -45833,7 +45900,7 @@ var render = function() {
           fn: function() {
             return [
               _c("div", { staticClass: "d-flex justify-content-center" }, [
-                _c("div", [
+                _c("div", { staticClass: "c-1" }, [
                   _c("i", {
                     class: _vm.icon,
                     staticStyle: { "font-size": "20px" }
@@ -45842,7 +45909,9 @@ var render = function() {
                 _vm._v(" "),
                 _c(
                   "div",
-                  { staticClass: "ml-2 font-weight-bold d-none d-md-block" },
+                  {
+                    staticClass: "ml-2 font-weight-bold d-none d-md-block c-2"
+                  },
                   [
                     _vm._v(
                       "\n                " +
