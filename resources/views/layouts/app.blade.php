@@ -17,8 +17,8 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <style>
+    <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
+{{-- <style>
         .c-1{
             color: #e6398f;
         }
@@ -31,7 +31,7 @@
             color: #4834d4;
         }
 
-    </style>
+    </style> --}}
 </head>
 
 
