@@ -26,8 +26,8 @@
                 <a class="c-2 navbar-brand" href="{{ url('/') }}">
                    Resume Manager
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler bg-primary" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                    <span class="text-dark"><i class="fas fa-bars"></i></span>
                 </button>
 
                 <div class="collapse bg-dark navbar-collapse" id="navbarSupportedContent">
