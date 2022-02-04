@@ -1,7 +1,8 @@
+import atributes from "../atributes.js";
+
 const padding = ['p-0', 'pr-md-1'];
 const colMd4 = ['col-md-4', ...padding];
 const colMd6 = ['col-md-6', ...padding];
-const attributes = { input: { class: 'form-control bg-dark text-light' } };
 
 export default {
   fields: [
@@ -13,7 +14,7 @@ export default {
       label: 'Adress',
       model: 'adress',
       styleClasses: colMd4,
-      attributes: attributes,
+      atributes: atributes,
     },
 
     //Address
@@ -24,7 +25,7 @@ export default {
       label: 'Postal Code',
       model: 'postalCode',
       styleClasses: colMd4,
-      attributes: attributes,
+      atributes: atributes,
     },
 
     //City
@@ -35,7 +36,7 @@ export default {
       label: 'City',
       model: 'city',
       styleClasses: colMd4,
-      attributes: attributes,
+      atributes: atributes,
     },
 
     //Country Code
@@ -46,7 +47,7 @@ export default {
       label: 'Country Code',
       model: 'countryCode',
       styleClasses: colMd6,
-      attributes: attributes,
+      atributes: atributes,
     },
 
     //Region
@@ -57,7 +58,7 @@ export default {
       label: 'Region',
       model: 'region',
       styleClasses: colMd6,
-      attributes: attributes,
+      atributes: atributes,
     },
   ],
 };

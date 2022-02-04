@@ -4,15 +4,15 @@
        <div class="row">
         @foreach ($resumes as $resume)
             <div class='col-md-4 mb-3'>
-                <div class='card bg-dark border-white p-3 text-light text-center'>
+                <div class='card bg-secondary border-white p-3 text-center'>
                     <div class='card-body'>
-                        <h3 class="card-title text-capitalize" style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+                        <h3 class="card-title text-light text-capitalize" style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
                             {{ $resume->title }}
                         </h3>
                         <p style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
                             {{ $resume->content['basics']['summary'] ?? 'No sumary' }}
                         </p>
-                        <p> {{ $resume->created_at }}</p>
+                        <p class="text-light"> {{ $resume->created_at }}</p>
 
                         <div class="d-lg-inline-flex">
                             <div>

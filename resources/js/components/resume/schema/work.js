@@ -1,7 +1,8 @@
+import atributes from "./atributes.js";
+
 const padding = ['p-0', 'pr-md-1'];
 const colMd4 = ['col-md-4', ...padding];
 const colMd6 = ['col-md-6', ...padding];
-const attributes = { input: { class: 'form-control bg-dark text-light' } };
 
 export default {
   fields: [
@@ -13,7 +14,7 @@ export default {
       label: 'Company',
       model: 'company',
       styleClasses: colMd4,
-      attributes: attributes,
+      atributes: atributes,
     },
 
     //Position
@@ -24,7 +25,7 @@ export default {
       label: 'Position',
       model: 'position',
       styleClasses: colMd4,
-      attributes: attributes,
+      atributes: atributes,
     },
 
     //Webstite
@@ -36,7 +37,7 @@ export default {
       model: 'website',
       validator: 'url',
       styleClasses: colMd4,
-      attributes: attributes,
+      atributes: atributes,
     },
 
     // Start Date
@@ -47,7 +48,7 @@ export default {
       label: 'Start Date',
       model: 'startDate',
       styleClasses: colMd6,
-      attributes: attributes,
+      atributes: atributes,
     },
     // End Date
     {
@@ -57,7 +58,7 @@ export default {
       label: 'End Date',
       model: 'endDate',
       styleClasses: colMd6,
-      attributes: attributes,
+      atributes: atributes,
     },
     // Summary
     {
@@ -66,7 +67,7 @@ export default {
       label: 'Summary',
       placeholder: 'What was this job about?',
       model: 'summary',
-      attributes: attributes,
+      atributes: atributes,
     },
   ],
 };

@@ -1,4 +1,4 @@
-const attributes = { input: { class: 'form-control bg-dark text-light' } };
+import atributes from "./atributes.js";
 
 export default {
   fields: [
@@ -10,7 +10,7 @@ export default {
       placeholder: 'Web Development',
       model: 'name',
       styleClasses: ['col-md-6', 'p-0', 'pr-md-1'],
-      attributes: attributes,
+      atributes: atributes,
     },
     // Level
     {
@@ -20,7 +20,7 @@ export default {
       placeholder: 'Master',
       model: 'level',
       styleClasses: ['col-md-6', 'p-0'],
-      attributes: attributes,
+      atributes: atributes,
     },
   ],
 };

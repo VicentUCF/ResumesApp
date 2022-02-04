@@ -1,6 +1,7 @@
+import atributes from "../atributes.js";
+
 const padding = ['p-0', 'pr-md-1'];
 const colMd4 = ['col-md-4', ...padding];
-const attributes = { input: { class: 'form-control bg-dark text-light' } };
 
 export default {
   fields: [
@@ -12,7 +13,7 @@ export default {
       label: 'Network',
       model: 'network',
       styleClasses: colMd4,
-      attributes: attributes,
+      atributes: atributes,
     },
 
     //URL
@@ -24,7 +25,7 @@ export default {
       model: 'url',
       validator: 'url',
       styleClasses: colMd4,
-      attributes: attributes,
+      atributes: atributes,
     },
 
     //Username
@@ -35,7 +36,7 @@ export default {
       label: 'Username',
       model: 'username',
       styleClasses: colMd4,
-      attributes: attributes,
+      atributes: atributes,
     },
   ],
 };

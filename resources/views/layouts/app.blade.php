@@ -18,26 +18,10 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <!-- Styles -->
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
-{{-- <style>
-        .c-1{
-            color: #e6398f;
-        }
-
-        .c-2{
-            color: white;
-        }
-
-        .bg-p{
-            color: #4834d4;
-        }
-
-    </style> --}}
-</head>
-
 
 <body class="bg-dark">
     <div id="app" >
-        <nav class="navbar navbar-dark navbar-expand-md  shadow-sm">
+        <nav class="navbar navbar-ligth navbar-expand-md  shadow-sm">
             <div class="container">
                 <a class="c-2 navbar-brand" href="{{ url('/') }}">
                    Resume Manager
@@ -46,33 +30,33 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse bg-dark text-light navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse bg-dark navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <li>
                             <a class="c-2" href="{{ route('resumes.create') }}">
-                            <i class="c-1 far fa-file"></i>
+                            <i class="c-1 text-light far fa-file"></i>
                             New Resume
                             </a>
                         </li>
 
                         <li class="ml-md-2">
                             <a class="c-2" href="{{ route('resumes.index') }}">
-                            <i class="c-1 fas fa-list"></i>
+                            <i class="c-1 text-light fas fa-list"></i>
                             View Resumes
                             </a>
                         </li>
 
                         <li class="ml-md-2">
                             <a class="c-2" href="{{ route('publications.create') }}">
-                            <i class="c-1 fas fa-globe"></i>
+                            <i class="c-1 text-light fas fa-globe"></i>
                             New Publication
                             </a>
                         </li>
 
                         <li class="ml-md-2">
                             <a class="c-2" href="{{ route('publications.index') }}">
-                            <i class="c-1 fas fa-list-alt"></i>
+                            <i class="c-1 text-light fas fa-list-alt"></i>
                             View Publications
                             </a>
                         </li>

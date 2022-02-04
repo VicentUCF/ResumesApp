@@ -4,7 +4,7 @@
 <div class="container">
     <div class="d-flex justify-content-center">
         <div class="col-md-8">
-            <div class="card bg-dark text-light text-center">
+            <div class="card bg-dark text-center">
                 <div class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">

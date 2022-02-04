@@ -2,7 +2,7 @@
 
 @section('content')
     <div class='container'>
-        <div class="text-light">
+        <div class="text-primary">
             <div class="cotainer my-3">
                 @if(isset($publication))
                     <form method="POST" action="{{ route('publications.update', $publication->id ) }}">
@@ -14,7 +14,7 @@
                     <div class="row">
                         <div class="form-group col-md-3">
                             <label>Resume</label>
-                            <select id="resume" name="resume_id" class="form-control bg-dark text-light">
+                            <select id="resume" name="resume_id" class="form-control bg-secondary text-primary">
                                @foreach ($resumes as $resume)
                                    @if (isset($publication) && $publication->resume->id === $resume->id)
                                      <option selected value="{{ $resume->id }}">{{ $resume->title }}</option>
@@ -27,7 +27,7 @@
 
                         <div class="form-group col-md-3">
                             <label>Theme</label>
-                             <select id="theme" name="theme_id" class="form-control bg-dark text-light">
+                             <select id="theme" name="theme_id" class="form-control bg-secondary text-primary">
                                 @foreach ($themes as $theme)
                                    @if (isset($publication) && $publication->theme->id === $theme->id)
                                      <option selected value="{{ $theme->id }}">{{ $theme->theme }}</option>
@@ -40,7 +40,7 @@
 
                         <div class="form-group col-md-3">
                             <label>Visibility</label>
-                            <select name="visibility" class="form-control bg-dark text-light">
+                            <select name="visibility" class="form-control bg-secondary text-primary">
                                  @foreach (['public', 'private', 'hide'] as $visibility )
                                    @if (isset($publication) && $publication->visibility === $visibility)
                                     <option selected value="{{ $visibility }}">{{ $visibility }}</option>
@@ -66,7 +66,7 @@
             </div>
         </div>
 
-        <div class="mt-2 bg-light rounded">
+        <div class="mt-2 bg-secondary rounded">
             <iframe id="iframe" class="border rounded w-100" style="height: 640px;"></iframe>
         </div>
     </div>

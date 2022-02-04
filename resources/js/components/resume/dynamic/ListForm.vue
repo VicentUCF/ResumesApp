@@ -12,7 +12,7 @@
               type="text"
               required
               autofocus
-              class="form-control bg-dark text-light"
+              class="form-control bg-dark text-secondary"
               :placeholder="placeholder"
               v-model="model[self][index]"
             />

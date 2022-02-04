@@ -3,10 +3,18 @@
 
 // Variables
 // @import 'variables';
-$dark: #252422;
-$secondary: #403D39;
-$light: #CCC5B9;
-$primary:#f25c54;
+$dark: #ffffff;
+$secondary: #f2f2f2;
+$light: #e91e63;
+$primary:#2b2e4a;
+$danger: #ba181b;
+
 
 // Bootstrap
 @import '../../node_modules/bootstrap/scss/bootstrap';
+
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+

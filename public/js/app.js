@@ -3002,6 +3002,25 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/resume/schema/atributes.js":
+/*!************************************************************!*\
+  !*** ./resources/js/components/resume/schema/atributes.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  input: {
+    "class": 'form-control bg-secondary text-primary'
+  }
+});
+
+/***/ }),
+
 /***/ "./resources/js/components/resume/schema/awards.js":
 /*!*********************************************************!*\
   !*** ./resources/js/components/resume/schema/awards.js ***!
@@ -3013,11 +3032,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-var attributes = {
-  input: {
-    "class": 'form-control bg-dark text-light'
-  }
-};
+/* harmony import */ var _atributes_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./atributes.js */ "./resources/js/components/resume/schema/atributes.js");
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   fields: [// Title
   {
@@ -3027,7 +3043,7 @@ var attributes = {
     placeholder: 'Award Title',
     model: 'title',
     styleClasses: ['col-md-4', 'p-0', 'pr-md-1'],
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }, // Date
   {
     type: 'input',
@@ -3035,7 +3051,7 @@ var attributes = {
     label: 'Date',
     model: 'date',
     styleClasses: ['col-md-4', 'p-0', 'pr-md-1'],
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }, // Awarder
   {
     type: 'input',
@@ -3044,7 +3060,7 @@ var attributes = {
     placeholder: 'Company',
     model: 'awarder',
     styleClasses: ['col-md-4', 'p-0'],
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }, // Summary
   {
     type: 'textArea',
@@ -3052,7 +3068,7 @@ var attributes = {
     label: 'Summary',
     placeholder: 'There is no spoon.',
     model: 'summary',
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }]
 });
 
@@ -3069,14 +3085,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _atributes_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../atributes.js */ "./resources/js/components/resume/schema/atributes.js");
+
 var padding = ['p-0', 'pr-md-1'];
-var colMd4 = ['col-md-4', 'bg-dark', 'text-light'].concat(padding);
+var colMd4 = ['col-md-4', 'bg-dark', 'text-primary'].concat(padding);
 var colMd6 = ['col-md-6'].concat(padding);
-var attributes = {
-  input: {
-    "class": 'form-control bg-dark text-light'
-  }
-};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   fields: [//Picture
   {
@@ -3091,7 +3104,7 @@ var attributes = {
     label: 'Name',
     model: 'name',
     styleClasses: colMd4,
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }, //Label
   {
     type: 'input',
@@ -3100,7 +3113,7 @@ var attributes = {
     label: 'Label',
     model: 'label',
     styleClasses: colMd4,
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }, //E-Mail
   {
     type: 'input',
@@ -3110,7 +3123,7 @@ var attributes = {
     model: 'email',
     validator: 'email',
     styleClasses: colMd4,
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }, //Phone
   {
     type: 'input',
@@ -3119,7 +3132,7 @@ var attributes = {
     label: 'Phone',
     model: 'phone',
     styleClasses: colMd6,
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }, //Website
   {
     type: 'input',
@@ -3129,7 +3142,7 @@ var attributes = {
     model: 'website',
     validator: 'url',
     styleClasses: colMd6,
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }, //Summary
   {
     type: 'textArea',
@@ -3137,7 +3150,7 @@ var attributes = {
     placeholder: 'A little bit about yourself',
     label: 'Summary',
     model: 'summary',
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }]
 });
 
@@ -3154,14 +3167,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _atributes_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../atributes.js */ "./resources/js/components/resume/schema/atributes.js");
+
 var padding = ['p-0', 'pr-md-1'];
 var colMd4 = ['col-md-4'].concat(padding);
 var colMd6 = ['col-md-6'].concat(padding);
-var attributes = {
-  input: {
-    "class": 'form-control bg-dark text-light'
-  }
-};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   fields: [//Address
   {
@@ -3171,7 +3181,7 @@ var attributes = {
     label: 'Adress',
     model: 'adress',
     styleClasses: colMd4,
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }, //Address
   {
     type: 'input',
@@ -3180,7 +3190,7 @@ var attributes = {
     label: 'Postal Code',
     model: 'postalCode',
     styleClasses: colMd4,
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }, //City
   {
     type: 'input',
@@ -3189,7 +3199,7 @@ var attributes = {
     label: 'City',
     model: 'city',
     styleClasses: colMd4,
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }, //Country Code
   {
     type: 'input',
@@ -3198,7 +3208,7 @@ var attributes = {
     label: 'Country Code',
     model: 'countryCode',
     styleClasses: colMd6,
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }, //Region
   {
     type: 'input',
@@ -3207,7 +3217,7 @@ var attributes = {
     label: 'Region',
     model: 'region',
     styleClasses: colMd6,
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }]
 });
 
@@ -3224,13 +3234,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _atributes_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../atributes.js */ "./resources/js/components/resume/schema/atributes.js");
+
 var padding = ['p-0', 'pr-md-1'];
 var colMd4 = ['col-md-4'].concat(padding);
-var attributes = {
-  input: {
-    "class": 'form-control bg-dark text-light'
-  }
-};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   fields: [//Network
   {
@@ -3240,7 +3247,7 @@ var attributes = {
     label: 'Network',
     model: 'network',
     styleClasses: colMd4,
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }, //URL
   {
     type: 'input',
@@ -3250,7 +3257,7 @@ var attributes = {
     model: 'url',
     validator: 'url',
     styleClasses: colMd4,
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }, //Username
   {
     type: 'input',
@@ -3259,7 +3266,7 @@ var attributes = {
     label: 'Username',
     model: 'username',
     styleClasses: colMd4,
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }]
 });
 
@@ -3276,11 +3283,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-var attributes = {
-  input: {
-    "class": 'form-control bg-dark text-light'
-  }
-};
+/* harmony import */ var _atributes_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./atributes.js */ "./resources/js/components/resume/schema/atributes.js");
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   fields: [// Institution
   {
@@ -3290,7 +3294,7 @@ var attributes = {
     placeholder: 'University or Institution name',
     model: 'institution',
     styleClasses: ['col-md-4', 'p-0', 'pr-md-1'],
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }, // Area
   {
     type: 'input',
@@ -3299,7 +3303,7 @@ var attributes = {
     placeholder: 'Computer Science',
     model: 'area',
     styleClasses: ['col-md-4', 'p-0', 'pr-md-1'],
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }, // Study Type
   {
     type: 'input',
@@ -3308,7 +3312,7 @@ var attributes = {
     placeholder: 'Bachelor of Science',
     model: 'studyType',
     styleClasses: ['col-md-4', 'p-0'],
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }, // Start Date
   {
     type: 'input',
@@ -3317,7 +3321,7 @@ var attributes = {
     label: 'Start Date',
     model: 'startDate',
     styleClasses: ['col-md-4', 'p-0', 'pr-md-1'],
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }, // End Date
   {
     type: 'input',
@@ -3326,7 +3330,7 @@ var attributes = {
     label: 'End Date',
     model: 'endDate',
     styleClasses: ['col-md-4', 'p-0', 'pr-md-1'],
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }, // GPA
   {
     type: 'input',
@@ -3335,7 +3339,7 @@ var attributes = {
     model: 'gpa',
     validor: 'number',
     styleClasses: ['col-md-4', 'p-0'],
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }]
 });
 
@@ -3352,11 +3356,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-var attributes = {
-  input: {
-    "class": 'form-control bg-dark text-light'
-  }
-};
+/* harmony import */ var _atributes_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./atributes.js */ "./resources/js/components/resume/schema/atributes.js");
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   fields: [// Name
   {
@@ -3366,7 +3367,7 @@ var attributes = {
     placeholder: 'Web Development',
     model: 'name',
     styleClasses: ['col-md-6', 'p-0', 'pr-md-1'],
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }, // Level
   {
     type: 'input',
@@ -3375,7 +3376,7 @@ var attributes = {
     placeholder: 'Master',
     model: 'level',
     styleClasses: ['col-md-6', 'p-0'],
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }]
 });
 
@@ -3392,14 +3393,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _atributes_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./atributes.js */ "./resources/js/components/resume/schema/atributes.js");
+
 var padding = ['p-0', 'pr-md-1'];
 var colMd4 = ['col-md-4'].concat(padding);
 var colMd6 = ['col-md-6'].concat(padding);
-var attributes = {
-  input: {
-    "class": 'form-control bg-dark text-light'
-  }
-};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   fields: [//Copmany
   {
@@ -3409,7 +3407,7 @@ var attributes = {
     label: 'Company',
     model: 'company',
     styleClasses: colMd4,
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }, //Position
   {
     type: 'input',
@@ -3418,7 +3416,7 @@ var attributes = {
     label: 'Position',
     model: 'position',
     styleClasses: colMd4,
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }, //Webstite
   {
     type: 'input',
@@ -3428,7 +3426,7 @@ var attributes = {
     model: 'website',
     validator: 'url',
     styleClasses: colMd4,
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }, // Start Date
   {
     type: 'input',
@@ -3437,7 +3435,7 @@ var attributes = {
     label: 'Start Date',
     model: 'startDate',
     styleClasses: colMd6,
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }, // End Date
   {
     type: 'input',
@@ -3446,7 +3444,7 @@ var attributes = {
     label: 'End Date',
     model: 'endDate',
     styleClasses: colMd6,
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }, // Summary
   {
     type: 'textArea',
@@ -3454,7 +3452,7 @@ var attributes = {
     label: 'Summary',
     placeholder: 'What was this job about?',
     model: 'summary',
-    attributes: attributes
+    atributes: _atributes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
   }]
 });
 
@@ -45809,7 +45807,7 @@ var render = function() {
                       expression: "model[self][index]"
                     }
                   ],
-                  staticClass: "form-control bg-dark text-light",
+                  staticClass: "form-control bg-dark text-secondary",
                   attrs: {
                     type: "text",
                     required: "",
