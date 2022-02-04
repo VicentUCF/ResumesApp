@@ -7,5 +7,7 @@ Here are some screenshots of the application:
 ![Untitled](ReadmeImages/1.png)
 ![Untitled](ReadmeImages/2.png)
 ![Untitled](ReadmeImages/3.png)
+![Untitled](ReadmeImages/4.png)
+![Untitled](ReadmeImages/5.png)
 
 
