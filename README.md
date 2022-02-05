@@ -4,6 +4,7 @@ Resume manager is a web-app for create and publicate resumes. This application u
 
 Here are some screenshots of the application:
 
+![Untitled](ReadmeImages/6.png)
 ![Untitled](ReadmeImages/1.png)
 ![Untitled](ReadmeImages/2.png)
 ![Untitled](ReadmeImages/3.png)
